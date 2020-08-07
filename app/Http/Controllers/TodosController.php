@@ -86,7 +86,7 @@ class TodosController extends Controller
         $todo->completed = true;
         $todo->save();
 
-        session()->flash('success','Todo completed successfully');
+        session()->flash('success','Todo Completed successfully');
 
         return redirect('/todos');
     }
